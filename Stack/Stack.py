@@ -2,14 +2,16 @@ class Stack:
     
     def __init__(self):
         self.stack = []
-        
-    def addToStack(self, data):
+     
+    #Enqueue
+    def addToStack(self, data): 
         if data not in self.stack:
             self.stack.append(data)
         else:
             return False
-        
-    def removeFromStack(self):
+    
+    #Dequeue    
+    def removeFromStack(self): 
         if len(self.stack) <= 0:
             return ("The stack does not contain any elements")
         else:
