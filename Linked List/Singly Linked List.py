@@ -13,7 +13,7 @@ class LinkedList:
     temp = self.head
     while(temp):
       print(temp.data)
-      temp = temp.data
+      temp = temp.next
       
 if __name__ == "__main__":
   
